@@ -20,19 +20,19 @@ public class PizzeApplication {
 		log.info("=========================");
 		log.info("Pizze:");
 		log.info("------");
-		log.info("{}", ctx.getBean("margherita"));
-		log.info("{}", ctx.getBean("prosciutto"));
-		log.info("{}", ctx.getBean("hawaiiPizza"));
+		log.info(ctx.getBean("margherita").toString());
+		log.info(ctx.getBean("prosciutto").toString());
+		log.info(ctx.getBean("hawaiiPizza").toString());
 
 		log.info("Bevande:");
 		log.info("--------");
-		log.info("{}", ctx.getBean("cocacola"));
-		log.info("{}", ctx.getBean("fanta"));
+		log.info(ctx.getBean("cocacola").toString());
+		log.info(ctx.getBean("fanta").toString());
 
 		log.info("Merchandise:");
 		log.info("------------");
-		log.info("{}", ctx.getBean("tshirt"));
-		log.info("{}", ctx.getBean("tazza"));
+		log.info(ctx.getBean("tshirt").toString());
+		log.info(ctx.getBean("tazza").toString());
 
 		ctx.close();
 	}
